@@ -2,12 +2,21 @@ import React from "react";
 import Fondo from "../assets/Index.png";
 import ParticlesBackground from '../components/ParticlesBackground';
 
+import pdf1 from "../assets/pdf (1).jpg";
+import pdf2 from "../assets/pdf (2).jpg";
+import pdf3 from "../assets/pdf (3).jpg";
+import pdf4 from "../assets/pdf (4).jpg";
+import pdf5 from "../assets/pdf (5).jpg";
+import pdf6 from "../assets/pdf (6).jpg";
+import pdf7 from "../assets/pdf (7).jpg";
+import pdf8 from "../assets/pdf (8).jpg";
+
 
 
 
 
 const Aprende = () => {
-    const pdfURL = 'https://drive.google.com/file/d/1PgoyCx315cpmXOJZtqToHP2V5Uu-o4aT/view?usp=sharing';
+    
     return(
         
         <div className="aprendeBody" style={{
@@ -18,7 +27,7 @@ const Aprende = () => {
             flexDirection: 'column',
             justifyContent:'flex-start',
             padding:'50px',
-            marginTop:'1200px',
+            marginTop:'80%',
 
         }}>
             <ParticlesBackground/>
@@ -73,27 +82,41 @@ La motivación es un concepto complejo que ha sido estudiado por filósofos y ps
             <div className="aprende-container">
                 <div className="aprende" style={{
                     display: 'flex',
-                    flexDirection: 'column',
+                    flexDirection: 'row',
                     justifyContent:'center',
                     alignItems:'center',
                     padding:'50px',
-                    marginTop:'50px',
+                    marginTop:'50px',}}>
 
-                }}>
-          <div className="PDF" style={{ width: '100%', height: '500px' }}>
-            <iframe
-              title="PDFViewer"
-              src={`https://docs.google.com/viewer?url=${pdfURL}&embedded=true`}
-              style={{
-                width: '100%',
-                height: '100%',
-                border: 'none',
-                paddingTop:'25px'
-              
-              }}
-              
-            ></iframe>
-          </div>
+                <img src={pdf1} alt="" style={{width:'40%',}}/> 
+                <img src={pdf2} alt="" style={{width:'40%',}}/>
+                <img src={pdf3} alt="" style={{width:'40%',}}/>
+                
+                </div>
+                <div className="aprende" style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent:'center',
+                    alignItems:'center',
+                    padding:'50px',
+                    marginTop:'50px',}}>
+                <img src={pdf4} alt="" style={{width:'40%',}}/>
+                <img src={pdf5} alt="" style={{width:'40%',}}/>
+                <img src={pdf6} alt="" style={{width:'40%',}}/>
+                </div>
+                <div className="aprende" style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent:'center',
+                    alignItems:'center',
+                    padding:'50px',
+                    marginTop:'50px',}}>
+                <img src={pdf7} alt="" style={{width:'40%',}}/>
+                <img src={pdf8} alt="" style={{width:'40%',}}/>
+                   
+                        
+          
+                
         </div>
             </div>
             <div className="footer-container">
